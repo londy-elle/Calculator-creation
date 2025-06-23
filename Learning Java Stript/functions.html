@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+</head>
+<body>
+
+<h1 id="heading">JavaScript</h1>
+<p id="addition"></p>
+<button onclick="changeText()">Change Text</button>
+
+<script>
+  function addNumbers(num1, num2) {
+   return num1 + num2;
+
+  }
+
+  document.getElementById("addition").innerHTML = addNumbers(10, 13);
+
+  function changeText() {
+    const heading = document.getElementById("heading");
+    if (heading.textContent === 'JavaScript') {
+      heading.textContent = 'Is awesome';
+    } else {
+      heading.textContent = 'JavaScript';
+    }
+  }
+</script>
+
+</body>
+</html>
